@@ -16,15 +16,17 @@ class Game extends React.Component {
     };
   }
 
-  // TODO: create a componentDidMount() which will set the current time
+  
   componentDidMount(){
     this.setCurrentTime()
   }
-
+  //here we use the componentDidMount on the timer method
+  //we then invoke it inside the method.
 
   setCurrentTime = () => {
     this.setState({ time: new Date(Date.now())});
   }
+  //this method simply starts a timer and displays it
 
   addPancake = () => {
     this.setState({
